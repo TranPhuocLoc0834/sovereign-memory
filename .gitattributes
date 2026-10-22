@@ -1,0 +1,11 @@
+# Keep shell scripts and source portable across Windows/Linux checkouts.
+* text=auto eol=lf
+
+# Tide's official relay is byte-exact: never normalize its line endings.
+/public/tide_dpop_auth.html -text
+
+# Reviewed final video files are binary; raw takes do not belong in Git.
+*.mp4 -text
+*.png -text
+*.jpg -text
+*.jpeg -text

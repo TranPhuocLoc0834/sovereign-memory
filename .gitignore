@@ -1,0 +1,23 @@
+node_modules/
+.tide-pack/
+coverage/
+*.tsbuildinfo
+data/*.sqlite*
+data/setup-state.json
+data/*invites*.json
+test-results/
+.env.*
+!.env.example
+.next/
+out/
+build/
+
+# Secrets — operator credentials NEVER belong in the repo (AP-41).
+.env
+.env.local
+.env.*.local
+scripts/.skycloak-api-key
+
+# Local TideCloak state (adapter export + H2 volume)
+data/tidecloak.json
+data/keycloakdb*

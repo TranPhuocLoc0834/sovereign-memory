@@ -1,0 +1,40 @@
+{
+  "name": "sovereign-memory",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "demo": "node scripts/demo.mjs",
+    "init": "bash scripts/init-tidecloak.sh",
+    "setup:prepare": "node --env-file-if-exists=.env scripts/setup-local.mjs prepare",
+    "setup:check": "node --env-file-if-exists=.env scripts/setup-local.mjs check",
+    "setup:tide": "node --env-file-if-exists=.env scripts/setup-local.mjs init",
+    "setup:export": "node --env-file-if-exists=.env scripts/setup-local.mjs export",
+    "verify:live": "node --env-file-if-exists=.env scripts/verify-live.mjs",
+    "verify:simulation": "node --env-file-if-exists=.env scripts/verify-simulation.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@tidecloak/nextjs": "0.14.40",
+    "jose": "^6.0.0",
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "lucide-react": "^0.468.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "typescript": "^5.0.0",
+    "tsx": "^4.20.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^16.0.0",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/postcss": "^4.0.0"
+  }
+}
