@@ -31,7 +31,7 @@ The simulator uses a separate ignored SQLite file and does not require Docker, a
 
 Ordinary `npm run start` / `npm run dev` still require real Tide authentication, with no simulation fallback. See [TIDE_INTEGRATION_PLAN.md](TIDE_INTEGRATION_PLAN.md) for the Tide MCP-informed integration map and [DEMO_SCRIPT.md](DEMO_SCRIPT.md) for narration. The remaining setup instructions below apply to **real Tide mode**.
 
-For a two-minute Vietnamese recording walkthrough, see [HUONG_DAN_QUAY_DEMO.md](HUONG_DAN_QUAY_DEMO.md). The final reviewed video belongs in [docs/demo](docs/demo/README.md); no recording has been added yet.
+For a two-minute Vietnamese recording walkthrough, see [HUONG_DAN_QUAY_DEMO.md](HUONG_DAN_QUAY_DEMO.md). It follows a user's problem → creating context → selectively sharing it → useful agent reads → revocation → access history, with a complete voiceover. The agent personas are API test identities, not connected chatbots or autonomous AI. The final reviewed video belongs in [docs/demo](docs/demo/README.md); no recording has been added yet.
 
 ## Project overview
 

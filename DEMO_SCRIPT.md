@@ -2,16 +2,20 @@
 
 ## Current simulation walkthrough
 
-Start with `npm run build`, then `npm run demo`, and open `http://localhost:3000`. Keep the amber **SIMULATION — NOT PROTECTED BY TIDECLOAK** notice visible. Say: "This is a local identity simulation. The backend access checks run, but Tide authentication and cryptographic governance have not been demonstrated."
+Lead with the user's problem, not a permissions test. A student working on Project Alpha wants a study assistant to know the presentation date and a finance assistant to know the budget, without giving both all the context. The product demonstrated is a memory store with per-agent sharing, revocation and scoped access history.
 
-1. Choose Demo Owner → Prepare demo memories. Show the two synthetic examples and per-agent grants in Memory Vault.
-2. Choose Study Agent → Agent Access Lab → study sample → Request access: show HTTP 200 and the reminder.
-3. Select the finance sample: show HTTP 403 and no plaintext. Choose Finance Agent and show the opposite allowed/denied pair.
-4. Return to Owner → Memory Vault → revoke Study Agent on the study sample. Switch back to Study Agent and show HTTP 403. Explicitly re-grant as Owner if rehearsing again.
-5. As an Agent, open Governance and call the admin-only role API → 403. As Demo Administrator, repeat → 200. An Administrator's memory read still returns 403.
-6. Show scoped Security Logs and the Tide integration plan. State: "Real mode will replace the fixture session with Tide SDK sign-in and pinned JWT/DPoP verification. Real realm governance still requires Tide's enclave; no quorum approval is simulated here. SQLite contains plaintext synthetic data."
+Use [the complete Vietnamese storyboard and voiceover](HUONG_DAN_QUAY_DEMO.md) as the recording script. Start with `npm run build`, then `npm run demo`, and open `http://localhost:3000`. Keep the **SIMULATION — NOT PROTECTED BY TIDECLOAK** notice visible. Seed the existing samples before recording so the finance budget is ready.
 
-Do not describe this recording as real Tide authentication or a successful cryptographic governance demo. The original real-mode script below remains a future verification target.
+1. **0:00–0:15 — Problem:** explain the two tasks and why sharing all context is unnecessary.
+2. **0:15–0:35 — Capture context:** as Owner, use New memory to create a new Study note with the Friday presentation date. Show the saved note; do not merely load a fixture and call that creation.
+3. **0:35–0:48 — Deliberate sharing:** grant Study Agent read access to that new note and copy its UUID. The finance budget has its own grant for Finance Agent. Category alone does not authorize access.
+4. **0:48–1:07 — Useful, scoped access:** switch to Study Agent, paste the new note's UUID in Agent Access Lab and show the date. Then request the budget sample and show that no content is returned. Narrate the benefit, not just HTTP 200/403.
+5. **1:07–1:18 — Another task still works:** switch to Finance Agent and show its granted budget. Sharing selectively does not mean blocking every useful request.
+6. **1:18–1:42 — Control when needs change:** as Owner, revoke Study Agent on the new note and copy that same UUID again. Retry as Study Agent and show denial. Do not accidentally test the old seeded study note; custom notes are not among the two sample target chips.
+7. **1:42–1:52 — Accountability:** as Owner, show the allowed/denied requests and revocation in Security Logs. Explain who requested what, when and the result; this is not an immutable log against the database operator.
+8. **1:52–2:00 — Outcome and boundary:** summarize one context store, selective sharing and revocable future access. Identity is simulated, real Tide protection is unverified and SQLite holds plaintext synthetic data.
+
+The app does not include an LLM, chatbot, autonomous agents, scheduling or budget analysis. The agent personas exercise the memory API; do not pretend they generated a study plan or financial advice. Administrator-role API testing is optional supplementary footage, not the main two-minute product story. The real-mode script below remains a future verification target, not a script for claiming the simulation is real Tide.
 
 ## Real Tide demonstration — not yet verified
 
