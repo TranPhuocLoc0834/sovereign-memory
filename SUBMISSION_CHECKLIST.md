@@ -15,10 +15,11 @@
 - [ ] Record a real refused commit followed by independently approved completion
 - [ ] Review and update VERIFICATION.md with actual evidence
 - [ ] Record and inspect the two-minute MP4; keep it below 100 MB
-- [ ] Create/publish the public GitHub repository and include the actual MP4
-- [ ] Confirm no credentials, private invitations, local data, or personal email were committed
+- [x] Create/publish public source: [TranPhuocLoc0834/sovereign-memory](https://github.com/TranPhuocLoc0834/sovereign-memory)
+- [ ] Add the reviewed final MP4 to the public repository
+- [x] Scan initial source/index: no deployment credentials, private invitations, SQLite, adapter JSON or licence email included; owner-supplied author email remains in Git metadata as requested
 - [ ] Submit the repository URL through the official challenge form
 
-The authoritative requirements and campus deadline are on [Tide UNLOCKED](https://tide.org/unlocked/). The page retrieved on 22 October lists Vietnam’s local deadline as 18:00 that day; recheck the official page before submitting. Repository publication, video creation and form submission have not been performed.
+The authoritative requirements and campus deadline are on [Tide UNLOCKED](https://tide.org/unlocked/). The page retrieved on 22 October lists Vietnam’s local deadline as 18:00 that day; recheck the official page before submitting. Source publication is complete; video creation/upload and form submission have not been performed.
 
 The latest requested deliverable is the explicitly simulated local app. Its completion does not check off any of the outstanding real Tide authentication or cryptographic governance requirements above.

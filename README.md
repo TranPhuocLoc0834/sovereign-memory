@@ -1,5 +1,7 @@
 > Current local demo: simulated sign-in and roles, with backend memory access checks. It is **not protected by TideCloak** in simulation mode. The real integration remains separate and blocked at licence/wallet activation.
 
+Public source: [TranPhuocLoc0834/sovereign-memory](https://github.com/TranPhuocLoc0834/sovereign-memory). A demo video has not been recorded or added yet.
+
 [![Built with TideCloak](https://tide.org/badges/built-with-tidecloak.svg)](https://tide.org/tidecloak?utm_source=github&utm_medium=readme&utm_campaign=unlocked)
 
 ## Run the local simulation
@@ -7,6 +9,16 @@
 In PowerShell, from this project directory:
 
 ```powershell
+npm run build
+npm run demo
+```
+
+For a fresh checkout, install Node.js 24 or newer, clone the repository, enter its directory and run `npm ci` before building:
+
+```powershell
+git clone https://github.com/TranPhuocLoc0834/sovereign-memory.git
+cd sovereign-memory
+npm ci
 npm run build
 npm run demo
 ```
@@ -196,6 +208,6 @@ See [VERIFICATION.md](VERIFICATION.md) for observed results and outstanding live
 
 ## Submission
 
-The README overview follows the five official headings retrieved from the [challenge](https://tide.org/unlocked/) on 22 October 2026 and stays under 300 words. The public repository must include a real two-minute MP4 under 100 MB. No video has been recorded or uploaded. No GitHub repository has been created or published by this workspace.
+The README overview follows the five official headings retrieved from the [challenge](https://tide.org/unlocked/) on 22 October 2026 and stays under 300 words. Public source is published at [TranPhuocLoc0834/sovereign-memory](https://github.com/TranPhuocLoc0834/sovereign-memory). The submission still requires a real two-minute MP4 under 100 MB. No video has been recorded or uploaded; a simulated recording must not be presented as proof of real Tide protection.
 
 Use [SUBMISSION_CHECKLIST.md](SUBMISSION_CHECKLIST.md). Complete live login and quorum verification before claiming challenge acceptance, recording the demonstration, or publishing the submission.

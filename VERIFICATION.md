@@ -26,7 +26,8 @@ Observed on 22 October 2026 in the local Windows workspace.
 | Live quorum operation | Not verified: requires Tide-mode realm and independent enrolled reviewers |
 | Visual browser QA | Blocked: browser and Computer Use runtimes could not initialize kernel assets |
 | Dependency audit | Zero production advisories; five development advisories through ESLint’s braces/glob dependency chain |
-| Video / public GitHub | Not recorded / not published |
+| Public GitHub source | Published to TranPhuocLoc0834/sovereign-memory, main; initial source commit ddbd510 |
+| Video | Not recorded or added; Vietnamese recording guide provided |
 
 The automated application tests cover missing/invalid/untrusted/expired/wrong-client tokens, DPoP binding and replay, allowed reads, content-free denied reads, forged agent IDs, owner isolation, administrator denial, revocation, explicit re-granting, role removal, scoped content-free logs, strict input validation, and cross-origin mutations. These do not exercise real Tide signing, licensing or enclave approvals.
 
@@ -35,3 +36,5 @@ The user explicitly requested simulated sign-in/roles/access after the activatio
 Never replace pending live results with a passing unit test claim. After Docker and interactive enrollment, update this file with the actual realm build, SDK compatibility, request IDs, thresholds, HTTP outcomes and observed approval result. Do not store tokens, invitations, passwords or personal email addresses in evidence.
 
 See TIDE_SETUP_BLOCKER.md for the sanitized real activation failure. The realm and Docker volume have been retained. Docker per-user PATH and new-volume ownership issues were repaired in setup-local.mjs and compose.yaml. All subsequent Tide status checks were made against the actual local server.
+
+The owner explicitly selected Public and approved using the authenticated account `TranPhuocLoc0834`. The initial source publication contained 58 files after an index-content scan found no local bootstrap password/licence email, private keys or token patterns. `.env`, SQLite, adapter JSON, invitations, runtime helpers and the Tide pack were excluded. The commit author email was supplied by the owner and is intentionally visible in Git metadata. The official relay's committed SHA-256 matches the working original; `.gitattributes` prevents newline conversion of that asset.
